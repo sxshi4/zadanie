@@ -1,5 +1,188 @@
-<html>
-  <body>
-    <h1>123123123</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio Portfolio Blog</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+ 
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+ 
+    header {
+      background: #222;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+    }
+ 
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+ 
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+ 
+    nav a:hover {
+      color: #00bcd4;
+    }
+ 
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+ 
+    h1, h2, h3 {
+      margin-bottom: 15px;
+      color: #222;
+    }
+ 
+    .about img {
+      width: 180px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+ 
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+ 
+    .card {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+    }
+ 
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+ 
+    .blog-post {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+ 
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <!-- MENU -->
+  <header>
+    <nav>
+      <a href="#home">Start</a>
+      <a href="#about">O mnie</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#blog">Blog</a>
+    </nav>
+  </header>
+ 
+  <!-- STRONA GŁÓWNA -->
+  <section id="home">
+    <h1>Witaj na mojej stronie</h1>
+    <p>To jest prosty projekt Bio-Portfolio-Blog wykonany w HTML i CSS.</p>
+  </section>
+ 
+  <!-- O MNIE -->
+  <section id="about" class="about">
+    <h2>O mnie</h2>
+ 
+    <img src="https://via.placeholder.com/180" alt="Moje zdjęcie">
+ 
+    <h3>Kim jestem?</h3>
+    <p>Mam na imię Jan i uczę się tworzenia stron internetowych.</p>
+ 
+    <h3>Moje zainteresowania</h3>
+    <p>Interesuję się programowaniem, grami komputerowymi i sportem.</p>
+ 
+    <h3>Moje cele</h3>
+    <p>Chcę rozwijać umiejętności front-end i tworzyć nowoczesne strony.</p>
+  </section>
+ 
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+ 
+    <div class="projects">
+      <div class="card">
+        <h3>Projekt 1</h3>
+        <p>Prosta strona internetowa wykonana w HTML i CSS.</p>
+        <a href="https://github.com/" target="_blank">Repozytorium</a>
+      </div>
+ 
+      <div class="card">
+        <h3>Projekt 2</h3>
+        <p>Aplikacja kalkulatora wykonana w JavaScript.</p>
+        <a href="https://github.com/" target="_blank">Repozytorium</a>
+      </div>
+ 
+      <div class="card">
+        <h3>Projekt 3</h3>
+        <p>Responsywne menu nawigacyjne do strony.</p>
+        <a href="https://github.com/" target="_blank">Repozytorium</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- BLOG -->
+  <section id="blog">
+    <h2>Blog</h2>
+ 
+    <div class="blog-post">
+      <h3>Pierwszy wpis</h3>
+      <small>01.05.2026</small>
+      <p>Dzisiaj stworzyłem swoją pierwszą stronę internetową.</p>
+    </div>
+ 
+    <div class="blog-post">
+      <h3>Drugi wpis</h3>
+      <small>05.05.2026</small>
+      <p>Nauczyłem się używać CSS do stylowania stron.</p>
+    </div>
+ 
+    <div class="blog-post">
+      <h3>Trzeci wpis</h3>
+      <small>10.05.2026</small>
+      <p>Dodałem portfolio i menu nawigacyjne do projektu.</p>
+    </div>
+  </section>
+ 
+  <!-- STOPKA -->
+  <footer>
+    <p>© 2026 Moja Strona | Bio Portfolio Blog</p>
+  </footer>
+ 
+</body>
 </html>

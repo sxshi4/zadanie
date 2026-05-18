@@ -1,0 +1,92 @@
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+ 
+    body {
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+ 
+    header {
+      background: #222;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+    }
+ 
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+ 
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+ 
+    nav a:hover {
+      color: #00bcd4;
+    }
+ 
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+ 
+    h1, h2, h3 {
+      margin-bottom: 15px;
+      color: #222;
+    }
+ 
+    .about img {
+      width: 180px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+ 
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+ 
+    .card {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+    }
+ 
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0077cc;
+      text-decoration: none;
+    }
+ 
+    .blog-post {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+ 
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
